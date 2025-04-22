@@ -50,10 +50,15 @@ def fizzbuzz_extended_crosssum(number: int) -> str:
     if(result != ""):
         return result 
     else: 
-     return str_num
- 
+     return str_num       
+
+def main():
+    for i in range(1, 101):
+        print(fizzbuzz(i))
+    for i in range(1, 101):
+        print(fizzbuzz_extended(i))
+    for i in range(1, 101):
+        print(fizzbuzz_extended_crosssum(i))
         
-
-
 if __name__ == "__main__":
     main()
